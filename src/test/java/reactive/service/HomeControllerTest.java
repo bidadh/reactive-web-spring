@@ -22,7 +22,7 @@ public class HomeControllerTest {
 
   @Before
   public void before() {
-    this.webTestClient = WebTestClient.bindToApplicationContext()
+    this.webTestClient = WebTestClient.bindToController(HomeController.class).build();
   }
 
   @Test
